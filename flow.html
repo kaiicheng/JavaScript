@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>流程控制</title>
+</head>
+<body>
+<script>
+//判斷式
+/*
+    if(布林值){
+        如果布林值是true，執行這個區塊的程式碼
+    }else if{
+        如果布林值是false，執行這個區塊的程式碼
+    }...{
+
+
+    }else{
+        如果所有布林值都是false，執行這個區塊的程式碼
+    }
+*/
+
+/*
+if (true){
+    console.log("OK");
+}
+*/
+
+/*
+if (true){
+    if (false){ //遇到布林值為false不執行
+        console.log("OK.");
+    }
+    console.log("Middle.");
+
+}
+console.log("Outside.");
+*/
+
+/*法1
+let money=prompt("要領多少錢?","");
+money=parseInt(money);
+if (money>=1000 && money<=100000){
+    console.log("OK!");
+   }
+if (money>100000){
+    console.log("Too Much.");
+    }
+if (money<1000){
+    console.log("Too Few.");
+    }
+*/
+
+/*法2
+let money=prompt("要領多少錢?","");
+money=parseInt(money);
+if (money<=100){
+    console.log("Too Few");
+}else if (money<=100000){
+    console.log("OK");
+}else{
+    console.log("Too Much")
+}
+*/
+
+/*
+    while(布林值){
+        如果布林值是true，執行這個區塊的程式碼
+        程式區塊執行結束後，回到迴圈開頭，再來一次
+
+    }
+*/
+
+/*
+while(true){
+    console.log("Hello!");
+
+}
+*/
+
+/*
+let n=1
+while(n<5){
+    console.log(n);
+    n++;
+}
+*/
+
+let n=1
+while(n<100000){
+    console.log(n);
+    n++;
+}
+
+
+
+
+</script>
+</body>
+</html>

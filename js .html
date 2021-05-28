@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JaveScript</title>
+</head>
+<body>
+<script>
+//console.log("Hello JavaScript");
+
+//資料   
+//數字
+/*
+5;
+12.555;
+//字串:任意的文字
+hellp world;
+"Hello world";
+"哈囉你好"
+//布林值，只有這兩個字可以寫
+true;
+false;
+//空值，最原始可被接受
+null;
+undefined;
+*/
+
+//在終端機印出資料:console.log(資料,資料,...)
+/*
+console.log(3);
+console.log(true,5);
+console.log(1,2,3,4,5);
+console.log(flase,123456);
+*/
+
+//變數:儲存資料用的名稱
+//使用流程:建立變數>使用變數
+
+/*
+let x; //建立變數 let 變數名稱;
+console.log(x); //利用變數名稱代替資料來運作
+x=10; //將資料放進變數中  變數名稱=資料;
+console.log(x);
+x="Bonjour";
+console.log(x); //新的東西會覆蓋舊的
+let y=5; //建立變數同時給定資料 let 變數名稱=資料;
+console.log(x);
+x="Bonjour";
+console.log(x,y); //新的東西會覆蓋舊的
+*/
+
+/*
+//運算符號
+//算術運算:+,-,*,/,%
+//let x=6*6;
+//console.log(x);
+let x=6%4; //% mot 取餘數的符號
+console.log(x);
+//指定運算:=,+=,-=,*=,/*,%=
+//x+1; //錯
+//x=x+1; //對
+x+=2 //x=x+2
+console.log(x);
+*/
+
+/*
+//比較運算:>, <, >=,<=,==
+x=4>3; //得到布林值true or false
+console.log(x);
+x=3*3*3<=2*2*2;
+console.log(x);
+x=4==3
+console.log(x);s
+*/
+
+/*
+//邏輯運算:&& /and/, || /or/
+x=true&&false;
+console.log(x);
+
+x=true||false;
+console.log(x);
+*/
+
+/*
+//單元運算:! 反轉, ++ 加一, -- 減一 
+x=!true;
+console.log(x);
+x!=true;
+x=3;
+x--; //x-=1; //x=x-1;
+console.log(x);
+*/
+
+/*
+//向使用者要求輸入 prompt(字串,字串)，以[字串]的形式取得輸入文字
+//prompt跳出視窗的指令
+let n1=prompt("請輸入一個數字","");
+let n2=prompt("請輸入一個數字","");
+let result=n1*n2;
+console.log(result);
+*/
+
+let n1=prompt("請輸入一個數字",""); // "5"
+let n2=prompt("請輸入一個數字",""); // "6"
+//把字串轉換成整數parseInt(字串)
+n1=parseInt(n1);
+n2=parseInt(n2);
+let result=n1+n2; //字串在一起，並非相加
+console.log(result);
+
+/*
+利用網頁版f12中的Console試試看以下:
+5+5
+10
+"5"+"5"
+"55"
+"Hello"+ "World"
+"HelloWorld"
+"Hello "+ "World";
+"Hello World"
+*/
+
+
+</script>
+
+
+    
+</body>
+</html>
