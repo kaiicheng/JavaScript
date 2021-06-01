@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+//用迴圈寫一個計算1+2+3+...+100總和的程式
+
+let result=0;
+let n=1;
+while(n<=100){
+    result+=n;
+    n++;
+}
+console.log(result);
+/*
+function cal(){     //cal指函數名稱，可以任意自訂
+    let result=0
+    let n=1;
+    while(n<=100){
+    result+=n;
+    n++;
+    }
+    console.log(result);
+}
+*/
+
+/*
+function cal(i){     //()中間加i
+    let result=0
+    let n=1;
+    while(n<=i){     //()中間加i
+    result+=n;
+    n++;
+    }
+    console.log(result);
+}
+
+cal(100)
+cal(50)
+
+*/
+
+
+/*
+let add=function(n1,n2){
+    console.log(n1+n2);
+};
+console.log(add);
+//let newName=add;
+//newName(3,4);
+
+let newName=add(5,6);
+newName(3,4);
+
+let x=3;
+let y=x;
+console.log(x);
+console.log(y);
+*/
+
+let x=3;
+x++;
+x="Hello";
+console.log(x/3)  //NaN ->Not a Number
+x=function(){
+    console.log("Hello!");
+};
+x();
+
+
+</script>
+</body>
+</html>
+
