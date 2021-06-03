@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>object</title>
+</head>
+<body>
+<script>
+//資料:數字、字串、布林值、空值、函式、物件
+
+//物件:用來裝其他資料的容器
+//建立物件>使用物件
+
+//建立誤寫法一:最基本的寫法
+//建立一個新物件:new object()
+
+/*
+let obj= new Object();
+obj.x=3; //為物件加入成員   物件.成員名稱=資料
+obj.y=4;
+obj.show=function(){
+    
+    //this 是函式的「綁定物件」
+    //物件的成員函式中的this:代表物件本身
+
+    
+    console.log(this);
+    console.log(this.x, this.y);
+};
+console.log(obj);
+*/
+
+/*
+//JSON (JavaScript Object Notation)
+//建立新物件:{成員名稱：資料, 成員名稱:資料,...}
+//let obj={}
+let obj={
+    x:3,
+    y:4,
+    show:function(){
+        console.log(this.x, this.y);
+    }
+}
+//使用物件
+console.log(obj);
+console.log(obj.x+obj.y);
+obj.show();
+*/
+
+/*
+function createPointObject(x,y){
+    let point=new Object();
+    point.x=x; //為物件加入成員   物件.成員名稱=資料
+    point.y=y;
+    point.show=function(){
+        console.log(this.x, this.y);
+        
+    };
+    return point;
+}
+// 使用物件
+let p1=createPointObject(3,4);
+console.log(p1);
+let p2=createPointObject(0,0);
+console.log(p2);
+*/
+
+//建構函式:專門用來創造物件的函式
+function point(x,y){
+    //自動產生新物件，並且放在建構函式的this綁定物件中
+
+    this.x=x; //為物件加入成員   物件.成員名稱=資料
+    this.y=y;
+    this.show=function(){
+        console.log(this.x, this.y);
+        
+    };
+    //return this;自動回傳this
+}
+//呼叫建構函式:new建構函式名稱(參數)
+let p1=new point(3,4);
+console.log(p1);
+let p2=new point(0,0);
+console.log(p2);
+</script>
+
+</body>
+</html>
