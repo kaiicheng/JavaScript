@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML DOM</title>
+
+<style>
+.test{color:red;}
+</style>
+</head>
+<body>
+    <!--<h3 onclick="change();">Hello HTML DOM</h3> onclick只要按到就有效，希望跟使用者互動-->
+    <h3>Hello HTML DOM</h3> <!--onclick只要按到就有效，希望跟使用者互動-->
+    <div id="content">今天的天氣還不錯</div>
+    <button onclick="change();">Change</button>  <!--//按鈕--> <!--"可放Java Script code"，比如if(true){}-->
+    <button onclick="open();">Show</button>
+    <script>
+        function show(){
+            let element=document.getElementById("content");
+            element.style.display="block";
+        }
+        function change(){
+            //1. 找出你想要操作的標籤
+            //根據id名稱取得標籤:document.getElementById(ID名稱)
+            //window.document.body.innerHTML="HELLO <b>World</b>"; //字體不一樣
+            let element=document.getElementById("content");
+            console.log(element);
+            //2. 操作標籤的屬性:標籤.屬性名稱
+            console.log(element.id); //取得id  
+            element.className="test"; //設定classs
+            element.innerHTML="今天天氣不好";
+            //3. 操作標籤的個別CSS設定:標籤.style.屬性名稱
+            //console.log(element.style);
+            element.style.fontWeight="bold"; //font-weight不能用減號，是另一個意思
+            element.style.display="none";
+
+
+        }
+    </script>
+
+</body>
+</html>
