@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML DOM Image Switch</title>
+</head>
+<body>
+    <h3>改變超連結和圖片</h3>
+    <a id="link" herf="https://www.google.com/">Google</a>
+    <button onclick="changeLink();">Change Link</button>
+    <img src="image.jpg"/>
+    <script>
+
+        function changeLink(){
+            let link=document.getElementById("link")
+            link.herf="https://www.facebook.com/"
+
+        }
+    </script>
+</body>
+</html>
