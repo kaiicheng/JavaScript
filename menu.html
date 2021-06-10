@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Popop Menu</title>
+<style>
+.nav{display:flex;}
+.title{width:30%;}
+.menu-trigger{display:none;}
+.menu{width:70%;display:flew;justify-content:flex-end;}
+.item{margin:0px 10px;}
+@media (max-width:500px){
+    .menu-trigger{width:70%;display:flex;justify-content:flex-end}
+    .menu{
+        display:block;
+        position:fixed;top:0px;right:0px; /*浮動的元件，距離上方、右方0像素*/ 
+        width:200px;height:100%;
+        background-color: #cccccc
+        }
+}
+</style>
+</head>
+<body>
+    <div class="nav">
+        <div class="title">這是標題</div>
+        <div class="menu-trigger">
+            <button>打開選單</button>   
+        </div>
+        <div class="menu">
+            <div class="item">選項一</div> <!--結構錯誤，div開頭前面沒有/-->
+            <div class="item">選項二</div>
+            <div class="item">選項三</div>
+        </div>
+    </div>
+
+
+</body>
+</html>
