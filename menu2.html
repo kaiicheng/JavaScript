@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>menu2</title>
+</head>
+<body>
+    <div class="nav">
+        <div class="title">這是標題</div>
+        <div class="menu-trigger">
+            <button onclick="show();">打開選單</button>   
+        </div>
+        <div id="menu" class="menu">
+            <div class="item">選項一</div> <!--結構錯誤，div開頭前面沒有/-->
+            <div class="item">選項二</div>
+            <div class="item">選項三</div>
+        </div>
+    </div>
+    <script>
+        function show(){
+            let element=document.getElementById("menu");
+            element.style.display="block";
+        }
+    </script>
+</body>
+</html>
