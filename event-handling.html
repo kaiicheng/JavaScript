@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Event Handling</title>
+</head>
+<body>
+    <h3>事件處理</h3>
+    <button 
+        onclick="console.log('Clicked');"
+        onmouseover="over(this);" onmouseout="out(this);"
+    >測試</button>
+    <div 
+        onclick="console.log('Clicked');"
+        onmouseover="over(this);" onmouseout="out(this);"
+    >這是一段字</div>
+    <script>
+        function over(elem){
+            elem.style.color='blue';
+        }
+        function out(elem){
+            elem.style.color='black';
+        }
+
+    </script>
+
+    ondblclick="console.log('Double Clicked');"
+    onmouseover="this.style.color='red';"
+    onmouseout="console.log('Mouse Out');"
+
+
+
+    div 
+    onclick="console.log('Clicked');"
+    onemousedown="console.log('Mouse Down');"  
+    onmouseup="console.log('Mouse Up');"
+    onmousemove="console.log('Mouse Move');"
+    onmouseover="this.style.color='red';"
+    onmouseout="this.style.color='black';"
+
+>666這是一段字666  div
+
+
+</body>
+</html>
