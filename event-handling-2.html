@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Event Handling by JavaSript</title>
+</head>
+<body>
+    <h3>事件處理</h3>
+    <button id="btn">測試</button>
+    <!--<button onclick="console.log('Clicked');" 測試<button>-->
+    <script>
+        //事件處理的要素：在哪個標籤上作用?事件名稱?對應的處理函式
+        
+        let btn=document.getElementById("btn");
+        let clickHandler=function(){
+           console.log("Clicked");  //做一個函式給下面的addEventListener
+            btn.removeEventListener("click", clickHandler);
+        };
+
+
+
+        //事件處理:標籤.addEventListener(事件名稱, 處理函式)
+        btn.addEventListener("click", clickHandler);
+        // mousedown
+        let mousedownHandler=function(){
+            this.style.color="red";
+        }
+        btn.addEventListener("mousedown", mousedownHandler);
+        //btn.style.color="red"
+        //console.log(btn);
+        
+        // mouseup
+        let mouseupHandler=function(){
+            this.style.color="black";
+        }
+
+        //let btn=document.getElementById("btn");
+        //let clickHandler=function(e){
+        //    console.log("Clicked", e);  //做一個函式給下面的addEventListener
+        //   if(e,ctrlkey){    //點擊時是否按住 ctrl
+        //        btn.removeEventListener("click", clickHandler);
+        //    }    
+                
+        //};
+
+
+        //事件處理:標籤.addEventListener(事件名稱, 處理函式)
+        btn.addEventListener("mouseup", mouseupHandler);
+        
+        /*
+            1. 瀏覽器偵測到使用者點擊，觸發點擊事件
+            2. 收集事件相關的資訊，建立一個 Event Object [事件物件]
+                let eventObj=new 事件物件();
+            3. 呼叫事件處理函式，並且將[事件物件]透過參數傳人
+                clickHandler(eventObj);
+
+        */
+
+
+
+
+    </script>
+
+        
+        
+
+</body>
+</html>
